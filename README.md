@@ -1,5 +1,7 @@
 # token-audit
 
+**English** | [简体中文](README.zh-CN.md)
+
 **Find the tokens your prompts waste, price them at your model's real list price, and rewrite the prompt with a token delta you can verify.**
 
 ![ci](https://github.com/kele-tao/token-audit/actions/workflows/ci.yml/badge.svg)
