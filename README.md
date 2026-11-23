@@ -5,7 +5,7 @@
 ![ci](https://github.com/kele-tao/token-audit/actions/workflows/ci.yml/badge.svg)
 ![python](https://img.shields.io/badge/python-3.10%2B-3776ab)
 ![license](https://img.shields.io/badge/license-MIT-green)
-![tests](https://img.shields.io/badge/tests-132%20passing-brightgreen)
+![tests](https://img.shields.io/badge/tests-155%20passing-brightgreen)
 ![dependencies](https://img.shields.io/badge/runtime%20dependencies-0-blue)
 
 ![token-audit scanning the bundled example prompts](docs/screenshot.png)
@@ -52,6 +52,9 @@ snapshot, and shows exactly which rewriting steps remove how many tokens.
   model, plus sensitivity to cache-hit ratio and output ratio.
 - **Renders a deterministic HTML report** with inline SVG cost bars. No
   JavaScript, no remote fonts, byte-identical across runs.
+
+Test count and coverage are real: 155 tests, 93% statement coverage of
+`src/token_audit` measured with `coverage run -m pytest`.
 
 Exit codes are part of the contract: `0` success, `1` findings or a failed gate,
 `2` usage error. Nothing in the tool ever makes a network call.
@@ -280,6 +283,11 @@ token-audit report prompts/ --html out/report.html   # HTML + inline SVG bars
 token-audit models                                   # pricing snapshot + date
 token-audit scan prompts/ --format json --out scan.json
 ```
+
+The HTML report is a single file with no JavaScript and no remote assets, so it
+renders identically offline and diffs cleanly in review:
+
+![token-audit HTML report with inline SVG cost bars](docs/report.png)
 
 `models` is the shortest way to see what the cost math is based on:
 
