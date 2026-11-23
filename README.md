@@ -54,7 +54,8 @@ snapshot, and shows exactly which rewriting steps remove how many tokens.
   JavaScript, no remote fonts, byte-identical across runs.
 
 Test count and coverage are real: 155 tests, 93% statement coverage of
-`src/token_audit` measured with `coverage run -m pytest`.
+`src/token_audit`, measured with
+`coverage run --source=src/token_audit -m pytest && coverage report`.
 
 Exit codes are part of the contract: `0` success, `1` findings or a failed gate,
 `2` usage error. Nothing in the tool ever makes a network call.
