@@ -1,0 +1,1210 @@
+{
+ "generated_with": "tiktoken 0.14.0",
+ "encodings": {
+  "cl100k": "cl100k_base",
+  "o200k": "o200k_base"
+ },
+ "seed": 20260101,
+ "samples": [
+  {
+   "id": "g001",
+   "text": "You are a helpful assistant. Answer concisely and cite sources when the",
+   "cl100k": 15,
+   "o200k": 15
+  },
+  {
+   "id": "g002",
+   "text": "You are a senior software engineer. Explain tradeoffs, then show the smallest correct patch.",
+   "cl100k": 18,
+   "o200k": 18
+  },
+  {
+   "id": "g003",
+   "text": "tem prompt: you must refuse requests that ask for medical or ",
+   "cl100k": 13,
+   "o200k": 13
+  },
+  {
+   "id": "g004",
+   "text": " summarise the customer support transcript and list every unresolved que",
+   "cl100k": 11,
+   "o200k": 11
+  },
+  {
+   "id": "g005",
+   "text": "te the paragraph below for a non-technical audience. Keep it unde",
+   "cl100k": 14,
+   "o200k": 14
+  },
+  {
+   "id": "g006",
+   "text": "Translate the following product description into German. Preserve the friendly tone.",
+   "cl100k": 13,
+   "o200k": 13
+  },
+  {
+   "id": "g007",
+   "text": "Given the JSON schema, produce three realistic example rows and explain each field.",
+   "cl100k": 15,
+   "o200k": 15
+  },
+  {
+   "id": "g008",
+   "text": "are the two proposals on cost, risk and delivery time, then recommend",
+   "cl100k": 14,
+   "o200k": 14
+  },
+  {
+   "id": "g009",
+   "text": "Write a unit test that covers empty input, unicode input and a 5 MB input.",
+   "cl100k": 18,
+   "o200k": 18
+  },
+  {
+   "id": "g010",
+   "text": "Find the bug in this function and explain why the existing tests did not catch it.",
+   "cl100k": 17,
+   "o200k": 17
+  },
+  {
+   "id": "g011",
+   "text": "The deployment failed twice this week because the integration tests time out under load.",
+   "cl100k": 15,
+   "o200k": 15
+  },
+  {
+   "id": "g012",
+   "text": "Our enterprise renewals grew 12% quarter over quarter, driven by the new pricing tier.",
+   "cl100k": 19,
+   "o200k": 19
+  },
+  {
+   "id": "g013",
+   "text": "def parse_config(path: str) -> dict:\n    with open(path, encoding='utf-8') as fh:\n        return json.load(fh)\n",
+   "cl100k": 30,
+   "o200k": 31
+  },
+  {
+   "id": "g014",
+   "text": "class RetryPolicy:\n    def __init__(self, attempts: int = 3, backoff: float = 0.5) -> None:\n        self.attempts = attempts\n",
+   "cl100k": 38,
+   "o200k": 39
+  },
+  {
+   "id": "g015",
+   "text": ".name, SUM(o.total) AS revenue FROM customers c JOIN orders o ON o.customer_id = c.id GROUP BY c.name ORDER BY reven",
+   "cl100k": 28,
+   "o200k": 28
+  },
+  {
+   "id": "g016",
+   "text": "function debounce(fn, ms) { let t; return (...a) => { clearTimeout(t); t = setTimeout(() => fn(...a), ms); }; }",
+   "cl100k": 32,
+   "o200k": 34
+  },
+  {
+   "id": "g017",
+   "text": "{\"type\":\"function\",\"function\":{\"name\":\"search_documents\",\"description\":\"Search the knowledge base.\",\"parameters\":{\"type\":\"object\",\"properties\":{\"query\":{\"type\":\"string\"},\"top_k\":{\"type\":\"integer\",\"minimum\":1,\"maximum\":20}},\"required\":[\"query\"]}}}",
+   "cl100k": 54,
+   "o200k": 56
+  },
+  {
+   "id": "g018",
+   "text": "| Model | Input $/M | Output $/M | Context |\n| --- | --- | --- | --- |\n| gpt-4o | 2.50 | 10.00 | 128k |\n| gpt-4o-mini | 0.15 | 0.60 | 128k |",
+   "cl100k": 67,
+   "o200k": 67
+  },
+  {
+   "id": "g019",
+   "text": "item**: explanation of the setting and its default value.\n- Ano",
+   "cl100k": 14,
+   "o200k": 14
+  },
+  {
+   "id": "g020",
+   "text": " TypeError: 'NoneType' object is not subscriptable at worker.py line 42 dur",
+   "cl100k": 18,
+   "o200k": 20
+  },
+  {
+   "id": "g021",
+   "text": "Write a haiku about distributed systems. Keep it under 20 words and do not mention clouds.",
+   "cl100k": 20,
+   "o200k": 20
+  },
+  {
+   "id": "g022",
+   "text": "Hello! I need help with order #12345 which was supposed to arrive last Tuesday. Can you check the status?",
+   "cl100k": 24,
+   "o200k": 24
+  },
+  {
+   "id": "g023",
+   "text": "It's 3.5 degrees outside; don't panic -- we'll be fine by noon.",
+   "cl100k": 20,
+   "o200k": 17
+  },
+  {
+   "id": "g024",
+   "text": "The quick brown fox jumps over the lazy dog. TOKENIZATION is fun, isn't it?",
+   "cl100k": 19,
+   "o200k": 18
+  },
+  {
+   "id": "g025",
+   "text": "hyperparameterization antidisestablishmentarianism pneumonoultramicroscopicsilicovolcanoconiosis",
+   "cl100k": 24,
+   "o200k": 22
+  },
+  {
+   "id": "g026",
+   "text": "1234567890 42 3.14159 -0.5 1e10 0xFF 0b1010 2026-11-23T15:42:09+08:00",
+   "cl100k": 44,
+   "o200k": 45
+  },
+  {
+   "id": "g027",
+   "text": "CamelCaseIdentifier snake_case_name SCREAMING_CONSTANT HTTPResponse XMLHttpRequest",
+   "cl100k": 14,
+   "o200k": 14
+  },
+  {
+   "id": "g028",
+   "text": "The tokenizer must never claim exactness for text it has not seen in the golden set.",
+   "cl100k": 18,
+   "o200k": 18
+  },
+  {
+   "id": "g029",
+   "text": "within three percent of the reference tokenizer on the committed sample se",
+   "cl100k": 12,
+   "o200k": 12
+  },
+  {
+   "id": "g030",
+   "text": "usand calls is computed from the committed pricing snapshot, not from an A",
+   "cl100k": 15,
+   "o200k": 15
+  },
+  {
+   "id": "g031",
+   "text": "Duplicate system prompts across six files cost the same money as keeping one copy.",
+   "cl100k": 15,
+   "o200k": 15
+  },
+  {
+   "id": "g032",
+   "text": "t inside the context window is billed like any other input token",
+   "cl100k": 12,
+   "o200k": 12
+  },
+  {
+   "id": "g033",
+   "text": "ples often contain more commentary than the task description ",
+   "cl100k": 11,
+   "o200k": 10
+  },
+  {
+   "id": "g034",
+   "text": "A JSON schema with long description fields is legitimate; a schema with redundant titles is waste.",
+   "cl100k": 18,
+   "o200k": 18
+  },
+  {
+   "id": "g035",
+   "text": "Markdown tables in context are expensive: pipes, dashes and padding characters all bill.",
+   "cl100k": 16,
+   "o200k": 17
+  },
+  {
+   "id": "g036",
+   "text": "Near-duplicate prompt fragments are found with MinHash over word shingles, not with diffs.",
+   "cl100k": 19,
+   "o200k": 19
+  },
+  {
+   "id": "g037",
+   "text": "ser never silently drops an instruction; it reports what it changed and",
+   "cl100k": 13,
+   "o200k": 13
+  },
+  {
+   "id": "g038",
+   "text": "Budget planning is arithmetic: requests per day times input and output tokens times price.",
+   "cl100k": 16,
+   "o200k": 16
+  },
+  {
+   "id": "g039",
+   "text": "hing changes the arithmetic more than any prompt rewrite you will ev",
+   "cl100k": 13,
+   "o200k": 12
+  },
+  {
+   "id": "g040",
+   "text": "A chat history export repeats the same system prompt on every turn of every conversation.",
+   "cl100k": 16,
+   "o200k": 16
+  },
+  {
+   "id": "g041",
+   "text": "Deterministic output means the same input yields byte identical HTML, JSON and terminal text.",
+   "cl100k": 17,
+   "o200k": 18
+  },
+  {
+   "id": "g042",
+   "text": "When the scan finds nothing, it says so and exits with status code zero.",
+   "cl100k": 16,
+   "o200k": 16
+  },
+  {
+   "id": "g043",
+   "text": "We do not call any model API. Ever. The tool is a calculator, not an agent.",
+   "cl100k": 20,
+   "o200k": 20
+  },
+  {
+   "id": "g044",
+   "text": "你好，请帮我写一个 Python 脚本，用于统计文件夹中的文件数量。",
+   "cl100k": 26,
+   "o200k": 20
+  },
+  {
+   "id": "g045",
+   "text": "このプロンプトを日本語で説明してください。回答は簡潔に。",
+   "cl100k": 29,
+   "o200k": 17
+  },
+  {
+   "id": "g046",
+   "text": "이 문장을 한국어로 번역하고 핵심 내용을 요약해 주세요.",
+   "cl100k": 28,
+   "o200k": 17
+  },
+  {
+   "id": "g047",
+   "text": "مرحبا، يرجى تلخيص هذا النص باللغة العربية.",
+   "cl100k": 32,
+   "o200k": 12
+  },
+  {
+   "id": "g048",
+   "text": "Привет, пожалуйста, сократи этот текст до двух предложений.",
+   "cl100k": 26,
+   "o200k": 14
+  },
+  {
+   "id": "g049",
+   "text": "Emoji: 🚀🎉👨‍👩‍👧‍👦 ✓ → ★ ❤",
+   "cl100k": 30,
+   "o200k": 21
+  },
+  {
+   "id": "g050",
+   "text": "You are a helpful assistant. Answer concisely and cite sources when they are available.",
+   "cl100k": 18,
+   "o200k": 18
+  },
+  {
+   "id": "g051",
+   "text": "You are a senior software engineer. Explain tradeoffs, then show the smallest correct patch.",
+   "cl100k": 18,
+   "o200k": 18
+  },
+  {
+   "id": "g052",
+   "text": "System prompt: you must refuse requests that ask for medical or legal advice.",
+   "cl100k": 15,
+   "o200k": 15
+  },
+  {
+   "id": "g053",
+   "text": "ase summarise the customer support transcript and list every unresolved question.",
+   "cl100k": 13,
+   "o200k": 13
+  },
+  {
+   "id": "g054",
+   "text": "Rewrite the paragraph below for a non-technical audience. Keep it under 120 words.",
+   "cl100k": 19,
+   "o200k": 18
+  },
+  {
+   "id": "g055",
+   "text": "ate the following product description into German. Preserve the friendly tone.",
+   "cl100k": 13,
+   "o200k": 13
+  },
+  {
+   "id": "g056",
+   "text": "Given the JSON schema, produce three realistic example rows and explain each field.",
+   "cl100k": 15,
+   "o200k": 15
+  },
+  {
+   "id": "g057",
+   "text": "Compare the two proposals on cost, risk and delivery time, then recommend one.",
+   "cl100k": 16,
+   "o200k": 16
+  },
+  {
+   "id": "g058",
+   "text": "Write a unit test that covers empty input, unicode input and a 5 MB input.",
+   "cl100k": 18,
+   "o200k": 18
+  },
+  {
+   "id": "g059",
+   "text": "Find the bug in this function and explain why the existing tests did not catch it.",
+   "cl100k": 17,
+   "o200k": 17
+  },
+  {
+   "id": "g060",
+   "text": "The deployment failed twice this week because the integration tests time out under load.",
+   "cl100k": 15,
+   "o200k": 15
+  },
+  {
+   "id": "g061",
+   "text": "Our enterprise renewals grew 12% quarter over quarter, driven by the new pricing tier.",
+   "cl100k": 19,
+   "o200k": 19
+  },
+  {
+   "id": "g062",
+   "text": "def parse_config(path: str) -> dict:\n    with open(path, encoding='utf-8') as fh:\n        return json.load(fh)\n",
+   "cl100k": 30,
+   "o200k": 31
+  },
+  {
+   "id": "g063",
+   "text": "yPolicy:\n    def __init__(self, attempts: int = 3, backoff: float = ",
+   "cl100k": 23,
+   "o200k": 23
+  },
+  {
+   "id": "g064",
+   "text": "SELECT c.name, SUM(o.total) AS revenue FROM customers c JOIN orders o ON o.customer_id = c.id GROUP BY c.name ORDER BY revenue DESC;",
+   "cl100k": 32,
+   "o200k": 32
+  },
+  {
+   "id": "g065",
+   "text": "function debounce(fn, ms) { let t; return (...a) => { clearTimeout(t); t = setTimeout(() => fn(...a), ms); }; }",
+   "cl100k": 32,
+   "o200k": 34
+  },
+  {
+   "id": "g066",
+   "text": "{\"type\":\"function\",\"function\":{\"name\":\"search_documents\",\"description\":\"Search the knowledge base.\",\"parameters\":{\"type\":\"object\",\"properties\":{\"query\":{\"type\":\"string\"},\"top_k\":{\"type\":\"integer\",\"minimum\":1,\"maximum\":20}},\"required\":[\"query\"]}}}",
+   "cl100k": 54,
+   "o200k": 56
+  },
+  {
+   "id": "g067",
+   "text": "| Model | Input $/M | Output $/M | Context |\n| --- | --- | --- | --- |\n| gpt-4o | 2.50 | 10.00 | 128k |\n| gpt-4o-mini | 0.15 | 0.60 | 128k |",
+   "cl100k": 67,
+   "o200k": 67
+  },
+  {
+   "id": "g068",
+   "text": "- **Bold item**: explanation of the setting and its default value.\n- Another bullet with inline code.\n",
+   "cl100k": 21,
+   "o200k": 22
+  },
+  {
+   "id": "g069",
+   "text": "Error: TypeError: 'NoneType' object is not subscriptable at worker.py line 42 during the nightly batch.",
+   "cl100k": 24,
+   "o200k": 26
+  },
+  {
+   "id": "g070",
+   "text": "Write a haiku about distributed systems. Keep it under 20 words and do not mention clouds.",
+   "cl100k": 20,
+   "o200k": 20
+  },
+  {
+   "id": "g071",
+   "text": "Hello! I need help with order #12345 which was supposed to arrive last Tuesday. Can you check the status?",
+   "cl100k": 24,
+   "o200k": 24
+  },
+  {
+   "id": "g072",
+   "text": "It's 3.5 degrees outside; don't panic -- we'll be fine by noon.",
+   "cl100k": 20,
+   "o200k": 17
+  },
+  {
+   "id": "g073",
+   "text": "The quick brown fox jumps over the lazy dog. TOKENIZATION is fun, isn't it?",
+   "cl100k": 19,
+   "o200k": 18
+  },
+  {
+   "id": "g074",
+   "text": "meterization antidisestablishmentarianism pneumonoultramicroscopicsilicovolcanoconiosi",
+   "cl100k": 24,
+   "o200k": 21
+  },
+  {
+   "id": "g075",
+   "text": "1234567890 42 3.14159 -0.5 1e10 0xFF 0b1010 2026-11-23T15:42:09+08:00",
+   "cl100k": 44,
+   "o200k": 45
+  },
+  {
+   "id": "g076",
+   "text": "CamelCaseIdentifier snake_case_name SCREAMING_CONSTANT HTTPResponse XMLHttpRequest",
+   "cl100k": 14,
+   "o200k": 14
+  },
+  {
+   "id": "g077",
+   "text": "The tokenizer must never claim exactness for text it has not seen in the golden set.",
+   "cl100k": 18,
+   "o200k": 18
+  },
+  {
+   "id": "g078",
+   "text": "We are within three percent of the reference tokenizer on the committed sample set.",
+   "cl100k": 15,
+   "o200k": 15
+  },
+  {
+   "id": "g079",
+   "text": "Cost per thousand calls is computed from the committed pricing snapshot, not from an API.",
+   "cl100k": 17,
+   "o200k": 17
+  },
+  {
+   "id": "g080",
+   "text": "licate system prompts across six files cost the same money as keeping one",
+   "cl100k": 13,
+   "o200k": 13
+  },
+  {
+   "id": "g081",
+   "text": "A base64 screenshot inside the context window is billed like any other input token.",
+   "cl100k": 16,
+   "o200k": 16
+  },
+  {
+   "id": "g082",
+   "text": "Few-shot examples often contain more commentary than the task description itself.",
+   "cl100k": 13,
+   "o200k": 13
+  },
+  {
+   "id": "g083",
+   "text": "A JSON schema with long description fields is legitimate; a schema with redundant titles is waste.",
+   "cl100k": 18,
+   "o200k": 18
+  },
+  {
+   "id": "g084",
+   "text": "Markdown tables in context are expensive: pipes, dashes and padding characters all bill.",
+   "cl100k": 16,
+   "o200k": 17
+  },
+  {
+   "id": "g085",
+   "text": "Near-duplicate prompt fragments are found with MinHash over word shingles, not with diffs.",
+   "cl100k": 19,
+   "o200k": 19
+  },
+  {
+   "id": "g086",
+   "text": "The optimiser never silently drops an instruction; it reports what it changed and why.",
+   "cl100k": 17,
+   "o200k": 16
+  },
+  {
+   "id": "g087",
+   "text": "Budget planning is arithmetic: requests per day times input and output tokens times price.",
+   "cl100k": 16,
+   "o200k": 16
+  },
+  {
+   "id": "g088",
+   "text": "Caching changes the arithmetic more than any prompt rewrite you will ever ship.",
+   "cl100k": 15,
+   "o200k": 14
+  },
+  {
+   "id": "g089",
+   "text": "A chat history export repeats the same system prompt on every turn of every conversation.",
+   "cl100k": 16,
+   "o200k": 16
+  },
+  {
+   "id": "g090",
+   "text": "stic output means the same input yields byte identical HTML, JSON and terminal te",
+   "cl100k": 16,
+   "o200k": 16
+  },
+  {
+   "id": "g091",
+   "text": "When the scan finds nothing, it says so and exits with status code zero.",
+   "cl100k": 16,
+   "o200k": 16
+  },
+  {
+   "id": "g092",
+   "text": "We do not call any model API. Ever. The tool is a calculator, not an agent.",
+   "cl100k": 20,
+   "o200k": 20
+  },
+  {
+   "id": "g093",
+   "text": "你好，请帮我写一个 Python 脚本，用于统计文件夹中的文件数量。",
+   "cl100k": 26,
+   "o200k": 20
+  },
+  {
+   "id": "g094",
+   "text": "このプロンプトを日本語で説明してください。回答は簡潔に。",
+   "cl100k": 29,
+   "o200k": 17
+  },
+  {
+   "id": "g095",
+   "text": "이 문장을 한국어로 번역하고 핵심 내용을 요약해 주세요.",
+   "cl100k": 28,
+   "o200k": 17
+  },
+  {
+   "id": "g096",
+   "text": "مرحبا، يرجى تلخيص هذا النص باللغة العربية.",
+   "cl100k": 32,
+   "o200k": 12
+  },
+  {
+   "id": "g097",
+   "text": "Привет, пожалуйста, сократи этот текст до двух предложений.",
+   "cl100k": 26,
+   "o200k": 14
+  },
+  {
+   "id": "g098",
+   "text": "Emoji: 🚀🎉👨‍👩‍👧‍👦 ✓ → ★ ❤",
+   "cl100k": 30,
+   "o200k": 21
+  },
+  {
+   "id": "g099",
+   "text": "You are a helpful assistant. Answer concisely and cite sources when they are available.",
+   "cl100k": 18,
+   "o200k": 18
+  },
+  {
+   "id": "g100",
+   "text": "You are a senior software engineer. Explain tradeoffs, then show the smallest correct patch.",
+   "cl100k": 18,
+   "o200k": 18
+  },
+  {
+   "id": "g101",
+   "text": "System prompt: you must refuse requests that ask for medical or legal advice.",
+   "cl100k": 15,
+   "o200k": 15
+  },
+  {
+   "id": "g102",
+   "text": "Please summarise the customer support transcript and list every unresolved question.",
+   "cl100k": 13,
+   "o200k": 13
+  },
+  {
+   "id": "g103",
+   "text": "Rewrite the paragraph below for a non-technical audience. Keep it under 120 words.",
+   "cl100k": 19,
+   "o200k": 18
+  },
+  {
+   "id": "g104",
+   "text": "Translate the following product description into German. Preserve the friendly tone.",
+   "cl100k": 13,
+   "o200k": 13
+  },
+  {
+   "id": "g105",
+   "text": "JSON schema, produce three realistic example rows and explain eac",
+   "cl100k": 12,
+   "o200k": 12
+  },
+  {
+   "id": "g106",
+   "text": "Compare the two proposals on cost, risk and delivery time, then recommend one.",
+   "cl100k": 16,
+   "o200k": 16
+  },
+  {
+   "id": "g107",
+   "text": "Write a unit test that covers empty input, unicode input and a 5 MB input.",
+   "cl100k": 18,
+   "o200k": 18
+  },
+  {
+   "id": "g108",
+   "text": "Find the bug in this function and explain why the existing tests did not catch it.",
+   "cl100k": 17,
+   "o200k": 17
+  },
+  {
+   "id": "g109",
+   "text": "The deployment failed twice this week because the integration tests time out under load.",
+   "cl100k": 15,
+   "o200k": 15
+  },
+  {
+   "id": "g110",
+   "text": "Our enterprise renewals grew 12% quarter over quarter, driven by the new pricing tier.",
+   "cl100k": 19,
+   "o200k": 19
+  },
+  {
+   "id": "g111",
+   "text": "def parse_config(path: str) -> dict:\n    with open(path, encoding='utf-8') as fh:\n        return json.load(fh)\n",
+   "cl100k": 30,
+   "o200k": 31
+  },
+  {
+   "id": "g112",
+   "text": " __init__(self, attempts: int = 3, backoff: float = 0.5) -> None:\n  ",
+   "cl100k": 26,
+   "o200k": 26
+  },
+  {
+   "id": "g113",
+   "text": "SELECT c.name, SUM(o.total) AS revenue FROM customers c JOIN orders o ON o.customer_id = c.id GROUP BY c.name ORDER BY revenue DESC;",
+   "cl100k": 32,
+   "o200k": 32
+  },
+  {
+   "id": "g114",
+   "text": "function debounce(fn, ms) { let t; return (...a) => { clearTimeout(t); t = setTimeout(() => fn(...a), ms); }; }",
+   "cl100k": 32,
+   "o200k": 34
+  },
+  {
+   "id": "g115",
+   "text": "arch the knowledge base.\",\"parameters\":{\"type\":\"object\",\"properties",
+   "cl100k": 12,
+   "o200k": 12
+  },
+  {
+   "id": "g116",
+   "text": "| Model | Input $/M | Output $/M | Context |\n| --- | --- | --- | --- |\n| gpt-4o | 2.50 | 10.00 | 128k |\n| gpt-4o-mini | 0.15 | 0.60 | 128k |",
+   "cl100k": 67,
+   "o200k": 67
+  },
+  {
+   "id": "g117",
+   "text": "tem**: explanation of the setting and its default value.\n- Another bul",
+   "cl100k": 14,
+   "o200k": 15
+  },
+  {
+   "id": "g118",
+   "text": "NoneType' object is not subscriptable at worker.py line 42 during ",
+   "cl100k": 16,
+   "o200k": 17
+  },
+  {
+   "id": "g119",
+   "text": "Write a haiku about distributed systems. Keep it under 20 words and do not mention clouds.",
+   "cl100k": 20,
+   "o200k": 20
+  },
+  {
+   "id": "g120",
+   "text": "Hello! I need help with order #12345 which was supposed to arrive last Tuesday. Can you check the status?",
+   "cl100k": 24,
+   "o200k": 24
+  },
+  {
+   "id": "g121",
+   "text": "It's 3.5 degrees outside; don't panic -- we'll be fine by noon.",
+   "cl100k": 20,
+   "o200k": 17
+  },
+  {
+   "id": "g122",
+   "text": "The quick brown fox jumps over the lazy dog. TOKENIZATION is fun, isn't it?",
+   "cl100k": 19,
+   "o200k": 18
+  },
+  {
+   "id": "g123",
+   "text": "hyperparameterization antidisestablishmentarianism pneumonoultramicroscopicsilicovolcanoconiosis",
+   "cl100k": 24,
+   "o200k": 22
+  },
+  {
+   "id": "g124",
+   "text": "1234567890 42 3.14159 -0.5 1e10 0xFF 0b1010 2026-11-23T15:42:09+08:00",
+   "cl100k": 44,
+   "o200k": 45
+  },
+  {
+   "id": "g125",
+   "text": "lCaseIdentifier snake_case_name SCREAMING_CONSTANT HTTPResponse XMLHttpRe",
+   "cl100k": 15,
+   "o200k": 14
+  },
+  {
+   "id": "g126",
+   "text": "The tokenizer must never claim exactness for text it has not seen in the golden set.",
+   "cl100k": 18,
+   "o200k": 18
+  },
+  {
+   "id": "g127",
+   "text": "We are within three percent of the reference tokenizer on the committed sample set.",
+   "cl100k": 15,
+   "o200k": 15
+  },
+  {
+   "id": "g128",
+   "text": "sand calls is computed from the committed pricing snapshot, not fr",
+   "cl100k": 12,
+   "o200k": 12
+  },
+  {
+   "id": "g129",
+   "text": "uplicate system prompts across six files cost the same money as keeping one c",
+   "cl100k": 14,
+   "o200k": 14
+  },
+  {
+   "id": "g130",
+   "text": "A base64 screenshot inside the context window is billed like any other input token.",
+   "cl100k": 16,
+   "o200k": 16
+  },
+  {
+   "id": "g131",
+   "text": "Few-shot examples often contain more commentary than the task description itself.",
+   "cl100k": 13,
+   "o200k": 13
+  },
+  {
+   "id": "g132",
+   "text": "A JSON schema with long description fields is legitimate; a schema with redundant titles is waste.",
+   "cl100k": 18,
+   "o200k": 18
+  },
+  {
+   "id": "g133",
+   "text": "Markdown tables in context are expensive: pipes, dashes and padding characters all bill.",
+   "cl100k": 16,
+   "o200k": 17
+  },
+  {
+   "id": "g134",
+   "text": "ments are found with MinHash over word shingles, not with dif",
+   "cl100k": 14,
+   "o200k": 13
+  },
+  {
+   "id": "g135",
+   "text": "The optimiser never silently drops an instruction; it reports what it changed and why.",
+   "cl100k": 17,
+   "o200k": 16
+  },
+  {
+   "id": "g136",
+   "text": "get planning is arithmetic: requests per day times input and output tokens ti",
+   "cl100k": 14,
+   "o200k": 14
+  },
+  {
+   "id": "g137",
+   "text": "Caching changes the arithmetic more than any prompt rewrite you will ever ship.",
+   "cl100k": 15,
+   "o200k": 14
+  },
+  {
+   "id": "g138",
+   "text": "A chat history export repeats the same system prompt on every turn of every conver",
+   "cl100k": 15,
+   "o200k": 15
+  },
+  {
+   "id": "g139",
+   "text": " means the same input yields byte identical HTML, JSON and terminal t",
+   "cl100k": 13,
+   "o200k": 13
+  },
+  {
+   "id": "g140",
+   "text": "When the scan finds nothing, it says so and exits with status code zero.",
+   "cl100k": 16,
+   "o200k": 16
+  },
+  {
+   "id": "g141",
+   "text": "e do not call any model API. Ever. The tool is a calculator, not an ag",
+   "cl100k": 19,
+   "o200k": 19
+  },
+  {
+   "id": "g142",
+   "text": "你好，请帮我写一个 Python 脚本，用于统计文件夹中的文件数量。",
+   "cl100k": 26,
+   "o200k": 20
+  },
+  {
+   "id": "g143",
+   "text": "このプロンプトを日本語で説明してください。回答は簡潔に。",
+   "cl100k": 29,
+   "o200k": 17
+  },
+  {
+   "id": "g144",
+   "text": "이 문장을 한국어로 번역하고 핵심 내용을 요약해 주세요.",
+   "cl100k": 28,
+   "o200k": 17
+  },
+  {
+   "id": "g145",
+   "text": "مرحبا، يرجى تلخيص هذا النص باللغة العربية.",
+   "cl100k": 32,
+   "o200k": 12
+  },
+  {
+   "id": "g146",
+   "text": "Привет, пожалуйста, сократи этот текст до двух предложений.",
+   "cl100k": 26,
+   "o200k": 14
+  },
+  {
+   "id": "g147",
+   "text": "Emoji: 🚀🎉👨‍👩‍👧‍👦 ✓ → ★ ❤",
+   "cl100k": 30,
+   "o200k": 21
+  },
+  {
+   "id": "g148",
+   "text": "You are a helpful assistant. Answer concisely and cite sources when they are available.",
+   "cl100k": 18,
+   "o200k": 18
+  },
+  {
+   "id": "g149",
+   "text": "You are a senior software engineer. Explain tradeoffs, then show the smallest correct patch.",
+   "cl100k": 18,
+   "o200k": 18
+  },
+  {
+   "id": "g150",
+   "text": "System prompt: you must refuse requests that ask for medical or legal advice.",
+   "cl100k": 15,
+   "o200k": 15
+  },
+  {
+   "id": "g151",
+   "text": "Please summarise the customer support transcript and list every unresolved question.",
+   "cl100k": 13,
+   "o200k": 13
+  },
+  {
+   "id": "g152",
+   "text": "Rewrite the paragraph below for a non-technical audience. Keep it under 120 words.",
+   "cl100k": 19,
+   "o200k": 18
+  },
+  {
+   "id": "g153",
+   "text": "Translate the following product description into German. Preserve the friendly tone.",
+   "cl100k": 13,
+   "o200k": 13
+  },
+  {
+   "id": "g154",
+   "text": "Given the JSON schema, produce three realistic example rows and explain each field.",
+   "cl100k": 15,
+   "o200k": 15
+  },
+  {
+   "id": "g155",
+   "text": "Compare the two proposals on cost, risk and delivery time, then recommend one.",
+   "cl100k": 16,
+   "o200k": 16
+  },
+  {
+   "id": "g156",
+   "text": "Write a unit test that covers empty input, unicode input and a 5 MB input.",
+   "cl100k": 18,
+   "o200k": 18
+  },
+  {
+   "id": "g157",
+   "text": "Find the bug in this function and explain why the existing tests did not catch it.",
+   "cl100k": 17,
+   "o200k": 17
+  },
+  {
+   "id": "g158",
+   "text": "The deployment failed twice this week because the integration tests time out under load.",
+   "cl100k": 15,
+   "o200k": 15
+  },
+  {
+   "id": "g159",
+   "text": " enterprise renewals grew 12% quarter over quarter, driven by",
+   "cl100k": 13,
+   "o200k": 13
+  },
+  {
+   "id": "g160",
+   "text": "def parse_config(path: str) -> dict:\n    with open(path, encoding='utf-8') as fh:\n        return json.load(fh)\n",
+   "cl100k": 30,
+   "o200k": 31
+  },
+  {
+   "id": "g161",
+   "text": "class RetryPolicy:\n    def __init__(self, attempts: int = 3, backoff: float = 0.5) -> None:\n        self.attempts = attempts\n",
+   "cl100k": 38,
+   "o200k": 39
+  },
+  {
+   "id": "g162",
+   "text": "SELECT c.name, SUM(o.total) AS revenue FROM customers c JOIN orders o ON o.customer_id = c.id GROUP BY c.name ORDER BY revenue DESC;",
+   "cl100k": 32,
+   "o200k": 32
+  },
+  {
+   "id": "g163",
+   "text": "function debounce(fn, ms) { let t; return (...a) => { clearTimeout(t); t = setTimeout(() => fn(...a), ms); }; }",
+   "cl100k": 32,
+   "o200k": 34
+  },
+  {
+   "id": "g164",
+   "text": "{\"type\":\"function\",\"function\":{\"name\":\"search_documents\",\"description\":\"Search the knowledge base.\",\"parameters\":{\"type\":\"object\",\"properties\":{\"query\":{\"type\":\"string\"},\"top_k\":{\"type\":\"integer\",\"minimum\":1,\"maximum\":20}},\"required\":[\"query\"]}}}",
+   "cl100k": 54,
+   "o200k": 56
+  },
+  {
+   "id": "g165",
+   "text": "t $/M | Context |\n| --- | --- | --- | --- |\n| gpt-4o | 2.50 | 10.00 | 128k |\n| gpt-4o-mini | 0.15 | 0.60 | 128k",
+   "cl100k": 58,
+   "o200k": 58
+  },
+  {
+   "id": "g166",
+   "text": " item**: explanation of the setting and its default value.\n- Another bullet with inline",
+   "cl100k": 16,
+   "o200k": 17
+  },
+  {
+   "id": "g167",
+   "text": "Error: TypeError: 'NoneType' object is not subscriptable at worker.py line 42 during the nightly batch.",
+   "cl100k": 24,
+   "o200k": 26
+  },
+  {
+   "id": "g168",
+   "text": "te a haiku about distributed systems. Keep it under 20 words and do not mention clouds.",
+   "cl100k": 20,
+   "o200k": 20
+  },
+  {
+   "id": "g169",
+   "text": "Hello! I need help with order #12345 which was supposed to arrive last Tuesday. Can you check the status?",
+   "cl100k": 24,
+   "o200k": 24
+  },
+  {
+   "id": "g170",
+   "text": "It's 3.5 degrees outside; don't panic -- we'll be fine by noon.",
+   "cl100k": 20,
+   "o200k": 17
+  },
+  {
+   "id": "g171",
+   "text": "The quick brown fox jumps over the lazy dog. TOKENIZATION is fun, isn't it?",
+   "cl100k": 19,
+   "o200k": 18
+  },
+  {
+   "id": "g172",
+   "text": "ablishmentarianism pneumonoultramicroscopicsilicovolcanoconiosi",
+   "cl100k": 20,
+   "o200k": 16
+  },
+  {
+   "id": "g173",
+   "text": "1234567890 42 3.14159 -0.5 1e10 0xFF 0b1010 2026-11-23T15:42:09+08:00",
+   "cl100k": 44,
+   "o200k": 45
+  },
+  {
+   "id": "g174",
+   "text": "CamelCaseIdentifier snake_case_name SCREAMING_CONSTANT HTTPResponse XMLHttpRequest",
+   "cl100k": 14,
+   "o200k": 14
+  },
+  {
+   "id": "g175",
+   "text": "e tokenizer must never claim exactness for text it has not seen in the golden s",
+   "cl100k": 17,
+   "o200k": 17
+  },
+  {
+   "id": "g176",
+   "text": "e are within three percent of the reference tokenizer on the committed sample set.",
+   "cl100k": 15,
+   "o200k": 15
+  },
+  {
+   "id": "g177",
+   "text": "Cost per thousand calls is computed from the committed pricing snapshot, not from an API.",
+   "cl100k": 17,
+   "o200k": 17
+  },
+  {
+   "id": "g178",
+   "text": "m prompts across six files cost the same money as keeping one copy",
+   "cl100k": 13,
+   "o200k": 13
+  },
+  {
+   "id": "g179",
+   "text": "A base64 screenshot inside the context window is billed like any other input token.",
+   "cl100k": 16,
+   "o200k": 16
+  },
+  {
+   "id": "g180",
+   "text": "Few-shot examples often contain more commentary than the task description itself.",
+   "cl100k": 13,
+   "o200k": 13
+  },
+  {
+   "id": "g181",
+   "text": "A JSON schema with long description fields is legitimate; a schema with redundant titles is waste.",
+   "cl100k": 18,
+   "o200k": 18
+  },
+  {
+   "id": "g182",
+   "text": "Markdown tables in context are expensive: pipes, dashes and padding characters all bill.",
+   "cl100k": 16,
+   "o200k": 17
+  },
+  {
+   "id": "g183",
+   "text": "ear-duplicate prompt fragments are found with MinHash over word shingles, not wit",
+   "cl100k": 17,
+   "o200k": 16
+  },
+  {
+   "id": "g184",
+   "text": "The optimiser never silently drops an instruction; it reports what it changed and why.",
+   "cl100k": 17,
+   "o200k": 16
+  },
+  {
+   "id": "g185",
+   "text": "Budget planning is arithmetic: requests per day times input and output tokens times price.",
+   "cl100k": 16,
+   "o200k": 16
+  },
+  {
+   "id": "g186",
+   "text": "Caching changes the arithmetic more than any prompt rewrite you will ever ship.",
+   "cl100k": 15,
+   "o200k": 14
+  },
+  {
+   "id": "g187",
+   "text": "A chat history export repeats the same system prompt on every turn of every conversation.",
+   "cl100k": 16,
+   "o200k": 16
+  },
+  {
+   "id": "g188",
+   "text": "Deterministic output means the same input yields byte identical HTML, JSON and terminal text.",
+   "cl100k": 17,
+   "o200k": 18
+  },
+  {
+   "id": "g189",
+   "text": "When the scan finds nothing, it says so and exits with status code zero.",
+   "cl100k": 16,
+   "o200k": 16
+  },
+  {
+   "id": "g190",
+   "text": "We do not call any model API. Ever. The tool is a calculator, not an agent.",
+   "cl100k": 20,
+   "o200k": 20
+  },
+  {
+   "id": "g191",
+   "text": "你好，请帮我写一个 Python 脚本，用于统计文件夹中的文件数量。",
+   "cl100k": 26,
+   "o200k": 20
+  },
+  {
+   "id": "g192",
+   "text": "このプロンプトを日本語で説明してください。回答は簡潔に。",
+   "cl100k": 29,
+   "o200k": 17
+  },
+  {
+   "id": "g193",
+   "text": "이 문장을 한국어로 번역하고 핵심 내용을 요약해 주세요.",
+   "cl100k": 28,
+   "o200k": 17
+  },
+  {
+   "id": "g194",
+   "text": "مرحبا، يرجى تلخيص هذا النص باللغة العربية.",
+   "cl100k": 32,
+   "o200k": 12
+  },
+  {
+   "id": "g195",
+   "text": "Привет, пожалуйста, сократи этот текст до двух предложений.",
+   "cl100k": 26,
+   "o200k": 14
+  },
+  {
+   "id": "g196",
+   "text": "Emoji: 🚀🎉👨‍👩‍👧‍👦 ✓ → ★ ❤",
+   "cl100k": 30,
+   "o200k": 21
+  },
+  {
+   "id": "g197",
+   "text": "You are a helpful assistant. Answer concisely and cite sources when they are available.",
+   "cl100k": 18,
+   "o200k": 18
+  },
+  {
+   "id": "g198",
+   "text": "You are a senior software engineer. Explain tradeoffs, then show the smallest correct patch.",
+   "cl100k": 18,
+   "o200k": 18
+  },
+  {
+   "id": "g199",
+   "text": "em prompt: you must refuse requests that ask for medical or legal advi",
+   "cl100k": 15,
+   "o200k": 15
+  },
+  {
+   "id": "g200",
+   "text": "Please summarise the customer support transcript and list every unresolved question.",
+   "cl100k": 13,
+   "o200k": 13
+  }
+ ]
+}

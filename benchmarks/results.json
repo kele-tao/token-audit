@@ -1,0 +1,42 @@
+{
+  "accuracy": [
+    {
+      "encoding": "cl100k",
+      "exact_matches": 200,
+      "expected_tokens": 4255,
+      "measured_tokens": 4255,
+      "median_abs_error_pct": 0.0,
+      "p95_abs_error_pct": 0.0,
+      "samples": 200,
+      "total_error_pct": 0.0
+    },
+    {
+      "encoding": "o200k",
+      "exact_matches": 200,
+      "expected_tokens": 3974,
+      "measured_tokens": 3974,
+      "median_abs_error_pct": 0.0,
+      "p95_abs_error_pct": 0.0,
+      "samples": 200,
+      "total_error_pct": 0.0
+    }
+  ],
+  "platform": "Windows-11-10.0.26300-SP0",
+  "python": "3.12.10",
+  "scan": {
+    "bytes": 5318781,
+    "files": 25,
+    "findings": 1,
+    "mb_per_second": 0.82,
+    "seconds": 6.452
+  },
+  "tokenizer": {
+    "cl100k_tokens": 1408060,
+    "cold_mb_per_second": 1.82,
+    "cold_seconds": 2.887,
+    "corpus_mb": 5.0,
+    "o200k_tokens": 1413116,
+    "warm_mb_per_second": 1.25,
+    "warm_seconds": 4.21
+  }
+}

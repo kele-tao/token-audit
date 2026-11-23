@@ -1,0 +1,43 @@
+{
+  "name": "support-copilot",
+  "notes": "Numbers are the profile measured by token-audit scan examples/prompts.",
+  "models": [
+    "gpt-4o",
+    "gpt-4o-mini",
+    "claude-sonnet-4"
+  ],
+  "traffic": {
+    "requests_per_day": 12000,
+    "days_per_month": 30,
+    "input_tokens": 4200,
+    "output_tokens": 380,
+    "cache_hit_ratio": 0.6
+  },
+  "scenarios": [
+    {
+      "name": "current",
+      "multiplier": 1.0
+    },
+    {
+      "name": "after-optimize",
+      "multiplier": 0.62
+    },
+    {
+      "name": "2x traffic",
+      "multiplier": 2.0
+    }
+  ],
+  "sensitivity": {
+    "cache_hit_ratio": [
+      0.0,
+      0.3,
+      0.6,
+      0.9
+    ],
+    "output_ratio": [
+      0.1,
+      0.25,
+      0.5
+    ]
+  }
+}

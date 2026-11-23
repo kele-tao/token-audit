@@ -1,0 +1,33 @@
+name: ci
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.10", "3.11", "3.12"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: install
+        run: pip install -e ".[dev]"
+      - name: lint
+        run: ruff check .
+      - name: test
+        run: pytest -q
+      - name: cli smoke test
+        run: python -m token_audit --help
+      - name: scan the bundled examples
+        run: python -m token_audit scan examples/prompts --no-color
+      - name: tokenizer accuracy gate
+        run: python -m token_audit accuracy
+      - name: html report smoke test
+        run: python -m token_audit report examples/prompts --html out/report.html

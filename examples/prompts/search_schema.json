@@ -1,0 +1,48 @@
+{
+  "name": "search_documents",
+  "title": "search_documents",
+  "description": "Search the internal knowledge base and return the most relevant passages.",
+  "parameters": {
+    "type": "object",
+    "title": "search_documents_parameters",
+    "properties": {
+      "query": {
+        "type": "string",
+        "title": "query",
+        "description": "Natural language query. Prefer nouns over full questions."
+      },
+      "top_k": {
+        "type": "integer",
+        "title": "top_k",
+        "description": "Number of passages to return.",
+        "minimum": 1,
+        "maximum": 20,
+        "default": 5
+      },
+      "filters": {
+        "type": "object",
+        "title": "filters",
+        "description": "Optional metadata filters applied before ranking.",
+        "properties": {
+          "space": {
+            "type": "string",
+            "title": "space",
+            "description": "Workspace key."
+          },
+          "updated_after": {
+            "type": "string",
+            "title": "updated_after",
+            "description": "ISO-8601 date; passages older than this are dropped."
+          }
+        },
+        "additionalProperties": true,
+        "required": []
+      }
+    },
+    "required": [
+      "query"
+    ],
+    "additionalProperties": false
+  },
+  "examples": []
+}

@@ -1,0 +1,40 @@
+name: Feature request
+description: Suggest a detector, a model price update or a CLI improvement
+title: "[feature] "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This project prefers small, measurable features. If your idea changes a
+        number the tool prints, say how that number should be verified.
+  - type: textarea
+    id: problem
+    attributes:
+      label: The problem
+      description: What are you trying to do today, and what makes it hard?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed change
+      description: What should the tool do differently? Include a command shape if useful.
+    validations:
+      required: true
+  - type: textarea
+    id: verification
+    attributes:
+      label: How would we know it works?
+      description: A test, a fixture or a number a reviewer can reproduce.
+    validations:
+      required: true
+  - type: checkboxes
+    id: scope
+    attributes:
+      label: Scope
+      options:
+        - label: This can be implemented with the standard library only.
+          required: false
+        - label: This would add a runtime dependency (explain why in the proposal).
+          required: false

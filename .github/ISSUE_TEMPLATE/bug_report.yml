@@ -1,0 +1,63 @@
+name: Bug report
+description: Report wrong output, a crash or a bad token count
+title: "[bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for the report. Wrong token counts are bugs; please include the
+        exact input so the count can be reproduced.
+  - type: input
+    id: version
+    attributes:
+      label: token-audit version
+      description: Output of `token-audit --version`
+      placeholder: token-audit 1.0.0
+    validations:
+      required: true
+  - type: input
+    id: python
+    attributes:
+      label: Python version and OS
+      placeholder: 3.12.10 on Windows 11
+    validations:
+      required: true
+  - type: textarea
+    id: command
+    attributes:
+      label: Command you ran
+      render: shell
+      placeholder: token-audit scan examples/prompts
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: What happened instead
+      description: Paste the output, including the exit code.
+    validations:
+      required: true
+  - type: textarea
+    id: input
+    attributes:
+      label: Minimal reproducing input
+      description: A short prompt, schema or JSONL line that triggers the problem.
+      render: text
+    validations:
+      required: false
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checks
+      options:
+        - label: I ran `token-audit accuracy` and pasted nothing that would be hidden by it.
+          required: false
+        - label: I am not reporting a security issue here (see SECURITY.md).
+          required: true
